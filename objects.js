@@ -20,3 +20,9 @@ person[key] = "thamerdan@gmail.com" //creates key named value of key ie. email
 person['key3'] = "thamerdan@gmail.com" //creates key named key3
 
 console.log(person)
+
+const personCopy = {...person}// makes a copy of the object
+console.log(personCopy)
+
+const personCopyCopy = Object.assign({},personCopy) // makes a copy of the object
+console.log(personCopyCopy)
