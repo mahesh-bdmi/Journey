@@ -10,7 +10,7 @@ person1 = {
       firstName: "Eshan",
       age: 2,
     };
-  
+//below methods give an option to select custom object  
 person1.about.call(person2,"male",'male') //we can change the value of this
 person1.about.apply(person2,['hello','world']) //allows arguments as array
 person1.about.bind(person2,['hello','world'])() //returns a function
