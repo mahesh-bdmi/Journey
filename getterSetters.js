@@ -11,6 +11,10 @@ class Person {
   set fullName(fullName) {
     [this.firstname, ...this.lastname] = fullName.split(" ");
   }
+
+  static get staticClass(){
+    return 'Hello, what are you doing?'
+  }
 }
 
 const person1 = new Person("Mahesh", "B", 32);
@@ -19,4 +23,5 @@ console.log(person1.fullName);
 
 person1.fullName = "Eshan B B B";
 
-console.log(person1.lastname);
+console.log(person1.firstname);
+console.log(Person.staticClass)
